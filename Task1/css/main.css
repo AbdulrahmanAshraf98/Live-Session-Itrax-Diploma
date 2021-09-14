@@ -66,11 +66,6 @@ nav .container .row .nav-item {
 
 nav .container .row .nav-item .item>a {
     position: relative;
-    transition: all 1s ease-in;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
 }
 
 nav .container .row .nav-item .item>a>span {
@@ -79,6 +74,11 @@ nav .container .row .nav-item .item>a>span {
 
 nav .container .row .nav-item .item>a:hover>span {
     color: #ae9768;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
 
 nav .container .row .nav-item .item-one a::after {
@@ -87,7 +87,7 @@ nav .container .row .nav-item .item-one a::after {
     border-top: 3px solid #ae9768;
     position: absolute;
     left: -12px;
-    top: -37px;
+    top: -35px;
     margin: 0 0;
 }
 
