@@ -1,0 +1,599 @@
+/* css variables */
+
+:root {
+    --main-color: #ae9768;
+    --white-color: #fff;
+    --black-color: #000;
+    --overlay-color: rgb(16 16 16 / 33%);
+    --heading-color: #303030;
+    --text-color: rgb(104, 104, 104);
+    --background-second-color: rgb(248 248 248);
+    ;
+}
+
+/* css variables */
+
+/* global rules */
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 17px;
+}
+
+h1, h2, h3 {
+    font-family: "Alegreya";
+    color: var(--heading-color);
+    line-height: 1.38em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+p {
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* global rules */
+
+/* header start */
+
+header {
+    width: 100%;
+    height: 750px;
+    background-image: url("../img/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header .overlay {
+    background-color: var(--overlay-color);
+    width: 100%;
+    height: 100%;
+}
+
+header .overlay nav {
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .overlay nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .overlay nav .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .overlay nav .container .row .logo {
+    width: 20%;
+}
+
+header .overlay nav .container .row .logo>img {
+    width: 15vw;
+    height: auto;
+}
+
+header .overlay nav .container .row .nav-item {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .overlay nav .container .row .nav-item .item>a {
+    position: relative;
+}
+
+header .overlay nav .container .row .nav-item .item>a>span {
+    font-size: 22px;
+}
+
+header .overlay nav .container .row .nav-item .item>a:hover>span {
+    color: var(--main-color);
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+header .overlay nav .container .row .nav-item .item-one a::after {
+    content: '';
+    width: 140%;
+    border-top: 3px solid var(--main-color);
+    position: absolute;
+    left: -12px;
+    top: -35px;
+    margin: 0 0;
+}
+
+header .overlay nav .container .row input, label {
+    display: none;
+}
+
+@media(max-width:991px) {
+    header .overlay nav {
+        width: 100%;
+        padding: 10px;
+    }
+    header.overlay nav .container .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .overlay nav .container .row .logo {
+        width: 20%;
+    }
+    header .overlay nav .container .row .logo>img {
+        width: 30vw;
+    }
+    header .overlay nav .container .row .nav-item {
+        display: unset;
+        width: 50vw;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -500px;
+        background: var(--white-color);
+        ;
+        visibility: hidden;
+        padding: 10px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        overflow-y: auto;
+    }
+    header .overlay nav .container .row .nav-item .item {
+        padding-bottom: 20px;
+    }
+    header .overlay nav .container .row .nav-item .item:not(:nth-child(6)) {
+        border-bottom: 2px solid var(--main-color);
+    }
+    header .overlay nav .container .row input:checked~.nav-item {
+        visibility: visible;
+        opacity: 1;
+        left: 0px;
+    }
+    header .overlay nav .container .row .nav-item .item {
+        padding: 4vh;
+        margin-bottom: 3vh;
+    }
+    header .overlay nav .container .row .nav-item .item a {
+        color: var(--black-color);
+        font-size: 20px;
+        line-height: 20px;
+    }
+    header .overlay nav .container .row .nav-item .item-one a::after {
+        display: none;
+    }
+    header .overlay nav .container input {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    header .overlay nav .container .row input {
+        display: none;
+    }
+    header .overlay nav .container .row label {
+        display: unset;
+        cursor: pointer;
+        width: 5vw;
+        height: 5vh;
+    }
+    header .overlay nav .container .row label>span {
+        display: block;
+        width: 5vw;
+        height: 1vh;
+        margin-bottom: 5px;
+        background-color: var(--black-color);
+        cursor: pointer;
+    }
+}
+
+/* end nav */
+
+/* start header content */
+
+header .overlay .header-content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .overlay .header-content .content-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5% 0;
+}
+
+header .overlay .header-content .content-info .item {
+    height: 90vh;
+    width: 100%;
+}
+
+header .overlay .header-content .content-info .item:nth-child(1) .info>p {
+    font-size: 24px;
+    color: var(--white-color);
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+header .overlay .header-content .content-info .item:nth-child(1) .info>h1 {
+    color: var(--white-color);
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 18px;
+    line-height: 1.2em;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+header .overlay .header-content .content-info .item .buttons {
+    width: 25vw;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .overlay .header-content .content-info .item .buttons button {
+    width: 20vw;
+    height: 10vh;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+
+header .overlay .header-content .content-info .item .buttons .bt1 {
+    border: 1px solid transparent;
+    background-color: var(--main-color);
+    margin: 0 5px;
+}
+
+header .overlay .header-content .content-info .item .buttons .bt1:hover {
+    background: var(--white-color);
+    color: #222;
+    border-color: var(--white-color);
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+header .overlay .header-content .content-info .item .buttons .bt2 {
+    border: 2px solid transparent;
+    border-color: var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+    margin: 0 5px;
+}
+
+header .overlay .header-content .content-info .item .buttons .bt2:hover {
+    opacity: 1;
+    background: var(--white-color);
+    color: #222;
+    border-color: var(--white-color);
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+header .overlay .content .content-info .item .scrollbutoon {
+    width: 80%;
+    margin: 100px auto;
+}
+
+header .overlay .header-content .content-info .item .scrollbutoon .parent {
+    position: relative;
+    top: 50px;
+    display: flex;
+    margin: 0 auto;
+    width: 32px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
+
+header .overlay .header-content .content-info .item .scrollbutoon .parent .child {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    top: 3px;
+    right: 25%;
+    left: 25%;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: scroll 2s infinite;
+    -webkit-animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        top: 5px;
+    }
+    50% {
+        opacity: 0;
+        top: 35px;
+    }
+    100% {
+        opacity: 0;
+        top: 5px;
+    }
+}
+
+@media(min-width:768px) and (max-width: 1024px) {
+    header .overlay .header-content .content-info .item:nth-child(1) .info>p {
+        font-size: 35px;
+        color: var(--white-color);
+        width: 70%;
+        margin: 0 auto;
+        font-weight: 400;
+        line-height: 44px;
+    }
+    header .overlay .header-content .content-info .item .buttons {
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .overlay .header-content .content-info .item .buttons button {
+        width: 26vw;
+        height: 8vh;
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 25px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+    }
+}
+
+@media(max-width:767px) {
+    header {
+        width: 100%;
+        height: 700px;
+        background-image: url("../img/drew-coffman-1872.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    header .overlay .header-content .content-info .item .buttons {
+        width: 50%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:576px) {
+    header .overlay .header-content .content-info .item:nth-child(1) .info>p {
+        font-size: 24px;
+        color: var(--white-color);
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    header .overlay .header-content .content-info .item .buttons {
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .overlay .header-content .content-info .item .buttons button {
+        width: 43vw;
+        height: 10vh;
+        padding: 10px 10px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+/* end header content */
+
+/* header end */
+
+/* who section start */
+
+.who {
+    width: 100%;
+    padding: 8% 0;
+    background-color: var(--white-color);
+}
+
+.who .container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.who .container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.who .container .row .who-img {
+    width: 42%;
+}
+
+.who .container .row .who-img>img {
+    width: 100%;
+}
+
+.who .container .row .who-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.who .container .row .who-info>h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.who .container .row .who-info>p {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.who .container .row .who-info ul {
+    margin: 20px 0;
+}
+
+.who .container .row .who-info ul li {
+    margin-bottom: 10px;
+}
+
+.who .container .row .who-info li i {
+    width: 40px;
+    height: 40px;
+    line-height: 2.5;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    text-align: center;
+}
+
+.who .container .row .who-info li:hover i {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+.who .container .row .who-info li .icon-list-text {
+    color: var(--text-color);
+    font-size: 22px;
+    line-height: 1.7;
+    margin-left: 10px;
+}
+
+@media(max-width:900px) {
+    .who .container .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .who .container .row .who-info li .icon-list-text {
+        color: var(--text-color);
+        font-size: 18px;
+        line-height: 1.5;
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:576px) {
+    .who .container .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .who .container .row .who-img {
+        width: 100%;
+        padding: 10px;
+    }
+    .who .container .row .who-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px 10px;
+    }
+    .who .container .row .who-info li .icon-list-text {
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 1.5;
+        margin-left: 10px;
+    }
+}
+
+/* who section end */
+
+.location {
+    background: var(--background-second-color)
+}
+
+.location .container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
