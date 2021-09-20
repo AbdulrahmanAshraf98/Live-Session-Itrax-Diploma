@@ -65,6 +65,9 @@ nav .list li {
     padding: 2% 0px;
     position: relative;
 }
+nav .list li:hover a  {
+    color:var(--main-color);
+}
 
 nav .list li:nth-child(4)::after {
     content: "HOT";
@@ -111,6 +114,7 @@ nav .list li .dropdown {
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    filter: drop-shadow(1px 2px 4px #e0e0e0 );
 }
 
 nav .list li .dropdown::before {
@@ -145,6 +149,9 @@ nav .icon>a {
     font-weight: 400;
     margin-right: 5%;
     color: var(--second-color);
+}
+nav .icon a:hover i {
+    color:var(--main-color)
 }
 
 /* -----------------------nav----------------------------- */
@@ -195,7 +202,7 @@ nav .icon>a {
     }
     nav .list li .dropdown {
         position: unset;
-        background: transparent;
+        background:var(--white-color);
         padding: 7px 7px 0;
         border-top: 0;
         border-radius: 0;
@@ -206,6 +213,7 @@ nav .icon>a {
         filter: 0;
         -webkit-filter: 0;
         display: none;
+        filter: drop-shadow(1px 2px 4px #e0e0e0 );
     }
     nav .list li .dropdown::before {
         display: none;
