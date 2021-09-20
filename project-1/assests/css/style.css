@@ -65,7 +65,7 @@ nav .list li {
     padding: 2% 0px;
     position: relative;
 }
-nav .list li:hover a  {
+nav .list li:hover>a   {
     color:var(--main-color);
 }
 
