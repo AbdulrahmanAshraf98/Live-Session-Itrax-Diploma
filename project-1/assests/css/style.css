@@ -354,10 +354,7 @@ header .container .row .img {
         -webkit-filter: 0;
         display: none;
     }
-    nav .list li .dropdown {
-        position: unset;
-    }
-    nav .list li:not(:nth-child(0)) .dropdown {
+    nav .list li:hover .dropdown {
         position: unset;
     }
     nav .list li .dropdown::before {
