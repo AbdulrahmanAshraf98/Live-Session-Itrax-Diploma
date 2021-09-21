@@ -169,7 +169,6 @@ nav .list li:hover .dropdown {
     -o-transition: all 1s ease-out;
     visibility: visible;
     opacity: 1;
-    position: absolute;
 }
 
 nav .list li:nth-child(5) .dropdown {
