@@ -403,17 +403,6 @@ header .container .row .img {
     -o-transition: all .5s ease-in;
 }
 
-.newproduct .grid-container .item img::after {
-    content: " ";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
 .newproduct .grid-container .item:hover img {
     transform: scale(1);
     -webkit-transform: scale(1);
