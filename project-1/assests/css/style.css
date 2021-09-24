@@ -655,6 +655,7 @@ header .container .row .img {
         -o-transition: all .4s ease-in;
         filter: drop-shadow(1px 2px 4px #e0e0e0);
         z-index: 999;
+        overflow: scroll;
     }
     nav #inp:checked~.list {
         opacity: 1;
@@ -751,6 +752,16 @@ header .container .row .img {
 @media (max-width:575px) {
     .btn-2 {
         padding: 20px 25px;
+    }
+    nav .brand {
+        width: 30%;
+        max-width: 30%;
+    }
+    nav label>i {
+        font-size: 30px;
+    }
+    nav .icon>i {
+        font-size: 30px;
     }
     /*--------------header ---------------*/
     header {
