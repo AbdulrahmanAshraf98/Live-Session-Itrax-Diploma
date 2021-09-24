@@ -759,7 +759,7 @@ header .container .row .img {
 
 @media (max-width:575px) {
     nav .icon a>i {
-        font-size: 22px;
+        font-size: 20px;
         margin-left: 10px;
     }
     .btn-2 {
