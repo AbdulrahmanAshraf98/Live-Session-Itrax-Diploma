@@ -621,6 +621,7 @@ header .container .row .img {
     /*--------------nav ---------------*/
     nav {
         padding: 5% 3%;
+        position: relative;
     }
     nav .brand {
         width: 20%;
@@ -634,8 +635,15 @@ header .container .row .img {
         order: 3;
     }
     nav .icon {
-        width: 30%;
+        width: 40%;
         text-align: center;
+    }
+    nav label>i {
+        font-size: 30px;
+    }
+    nav .icon a>i {
+        font-size: 24px;
+        margin-left: 10px;
     }
     nav .list {
         width: 95%;
@@ -750,18 +758,16 @@ header .container .row .img {
 @media (max-width:767px) {}
 
 @media (max-width:575px) {
+    nav .icon a>i {
+        font-size: 22px;
+        margin-left: 10px;
+    }
     .btn-2 {
         padding: 20px 25px;
     }
     nav .brand {
         width: 30%;
         max-width: 30%;
-    }
-    nav label>i {
-        font-size: 30px;
-    }
-    nav .icon>i {
-        font-size: 30px;
     }
     /*--------------header ---------------*/
     header {
