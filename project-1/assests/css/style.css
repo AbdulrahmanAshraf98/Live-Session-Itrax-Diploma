@@ -643,7 +643,6 @@ header .container .row .img {
     }
     nav .icon a>i {
         font-size: 24px;
-        margin-left: 10px;
     }
     nav .list {
         width: 95%;
@@ -760,7 +759,6 @@ header .container .row .img {
 @media (max-width:575px) {
     nav .icon a>i {
         font-size: 20px;
-        margin-left: 10px;
     }
     .btn-2 {
         padding: 20px 25px;
