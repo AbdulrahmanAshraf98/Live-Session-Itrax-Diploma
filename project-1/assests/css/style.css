@@ -725,7 +725,11 @@ header .container .row .img {
 /*--------------watch-area  -------------------*/
 
 .watch-area {
-    padding: 10% 0;
+    padding: 5% 0;
+}
+
+.watch-area .container {
+    padding: 5% 0;
 }
 
 .watch-area .container .grid-container {
@@ -913,11 +917,12 @@ header .container .row .img {
     /*--------------watch-area  -------------------*/
     .watch-area .container .grid-container {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: unset;
-        gap: 3%;
+        grid-template-rows: repeat(4, max-content);
+        gap: 30px;
     }
     .watch-area .container .grid-container .watch-item>h2 {
         font-size: 28px;
+        margin-bottom: 20px;
     }
     .watch-area .container .grid-container .watch-item>p {
         margin-bottom: 30px;
