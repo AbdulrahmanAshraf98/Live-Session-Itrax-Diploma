@@ -725,11 +725,7 @@ header .container .row .img {
 /*--------------watch-area  -------------------*/
 
 .watch-area {
-    padding: 5% 0;
-}
-
-.watch-area .container {
-    padding: 5% 0;
+    padding: 10% 0;
 }
 
 .watch-area .container .grid-container {
