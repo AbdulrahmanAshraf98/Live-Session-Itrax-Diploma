@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?e76aea19abc9edf0e604e449ad536ef8") format("truetype"),
+url("./flaticon.woff?e76aea19abc9edf0e604e449ad536ef8") format("woff"),
+url("./flaticon.woff2?e76aea19abc9edf0e604e449ad536ef8") format("woff2"),
+url("./flaticon.eot?e76aea19abc9edf0e604e449ad536ef8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e76aea19abc9edf0e604e449ad536ef8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-box:before {
+    content: "\f101";
+}
+.flaticon-unlock:before {
+    content: "\f102";
+}
+.flaticon-reload:before {
+    content: "\f103";
+}
+.flaticon-search:before {
+    content: "\f104";
+}
+.flaticon-shopping-cart:before {
+    content: "\f105";
+}
+.flaticon-user:before {
+    content: "\f106";
+}
+.flaticon-play-button-arrowhead:before {
+    content: "\f107";
+}
+.flaticon-next:before {
+    content: "\f108";
+}
+.flaticon-twitter:before {
+    content: "\f109";
+}
+.flaticon-facebook:before {
+    content: "\f10a";
+}
+.flaticon-behance:before {
+    content: "\f10b";
+}
+.flaticon-globalization:before {
+    content: "\f10c";
+}
+.flaticon-menu:before {
+    content: "\f10d";
+}
+.flaticon-like:before {
+    content: "\f10e";
+}
+.flaticon-heart:before {
+    content: "\f10f";
+}
