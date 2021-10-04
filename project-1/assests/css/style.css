@@ -51,6 +51,7 @@ a {
 ul {
     list-style-type: none;
 }
+
 button:focus {
     outline: none;
 }
@@ -802,10 +803,6 @@ header .container .row .img {
 
 /*--------------Footer start--------------------------*/
 
-footer {
-    padding-bottom: 8%;
-}
-
 footer .container .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -879,7 +876,7 @@ footer .container .grid-container .footer-bottom .row {
     color: var(--four-color);
     align-items: center;
     justify-content: space-between;
-    font-size:14px;
+    font-size: 14px;
 }
 
 footer .container .grid-container .footer-bottom .row .copyright {
@@ -890,10 +887,11 @@ footer .container .grid-container .footer-bottom .row .copyright>p {
     line-height: 1.5;
     color: var(--five-color);
 }
-footer .container .grid-container .footer-bottom .row .copyright>p>i{
 
+footer .container .grid-container .footer-bottom .row .copyright>p>i {
     color: var(--main-color);
 }
+
 footer .container .grid-container .footer-bottom .row .copyright>p>a {
     color: var(--main-color);
 }
@@ -902,15 +900,17 @@ footer .container .grid-container .footer-bottom .row .social-icon>a {
     color: var(--second-color);
     margin-right: 20px;
 }
+
 footer .container .grid-container .footer-bottom .row .social-icon>a i {
-    display: inline-block;   
+    display: inline-block;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-footer .container .grid-container .footer-bottom .row .social-icon>a:hover i{
+
+footer .container .grid-container .footer-bottom .row .social-icon>a:hover i {
     color: var(--main-color);
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
@@ -1170,7 +1170,6 @@ footer .container .grid-container .footer-bottom .row .social-icon>a:hover i{
     }
     footer .container .grid-container .footer-bottom .row .social-icon {
         width: 100%;
-        text-align: center;
     }
     /*--------------footer ---------------*/
 }
@@ -1284,8 +1283,8 @@ footer .container .grid-container .footer-bottom .row .social-icon>a:hover i{
     footer .grid-container .footer-top .grid-container .list-footer>p {
         margin-bottom: 10px;
     }
-     footer .container .grid-container .footer-bottom .row .copyright {
-        margin-bottom: 10%;
+    footer .container .grid-container .footer-bottom .row .copyright {
+        margin-bottom: 3%;
     }
     /*--------------footer ---------------*/
 }
