@@ -971,7 +971,6 @@ footer .container .grid-container .footer-bottom .row .social-icon>a:hover i {
         -o-transition: all .4s ease-in;
         filter: drop-shadow(1px 2px 4px #e0e0e0);
         z-index: 999;
-        overflow: scroll;
     }
     nav #inp:checked~.list {
         opacity: 1;
