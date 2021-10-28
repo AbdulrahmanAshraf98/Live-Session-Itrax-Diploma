@@ -1,10 +1,14 @@
 var tasks =[];
-document.getElementById("btn-add").onclick=function(){
-    var task= document.getElementById("task");
-    tasks.push(task.value);
-    task.value="";
-    view();
+var btn1= document.getElementById("btn-add");
+var btn2= document.getElementById("btn-update");
+    btn1.onclick=function (){
+        var task= document.getElementById("task");
+        tasks.push(task.value);
+        task.value="";
+        view();
 }
+
+
 function view(){
     var result=document.getElementById("result");
     var output="";
@@ -22,22 +26,21 @@ function destory(index){
     view();
 }
 function update(index){
-    var btn;
+   var task= document.getElementById("task");
+   task.value=tasks[index];
+   btn1.style.display="none";
+   btn2.style.display="inline-block";
+   btn2.value=index;
 
-        btn=document.getElementById("btn-add");
-        document.getElementById("task").value=tasks[index];
-        btn.id="btn-update";
-        btn.innerText="update";
-        edit(index);
 }
 
-function edit(index){
-    btn=document.getElementById("btn-update");
-    btn.onclick=function(){
-        tasks[index]=document.getElementById("task").value;
-        view();
-        btn.id="btn-add";
-        btn.innerText="add";
-    }
-    
+
+btn2.onclick=function (){
+    var index=btn2.value;
+    var task= document.getElementById("task");
+    tasks[index]=task.value;
+    view();
+    task.value="";
+    btn2.style.display="none";
+    btn1.style.display="inline-block";
 }
